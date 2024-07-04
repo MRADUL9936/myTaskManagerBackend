@@ -65,7 +65,7 @@ export const deleteTask=async(req,res)=>{
   
     try{
         const id=req.params.id
-       const task=await Task.findById({taskId:id})
+       const task=await Task.findById(id)
 
     
        if(!task){
